@@ -1,7 +1,7 @@
 name: games-test
 
 entryPoint:
-  - madin.sc
+  - maddin.sc
 
 botEngine: v2
 language: ru
