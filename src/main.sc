@@ -9,7 +9,7 @@ theme: /
     
     state:
         q!: asd
-        a: asd ok Test
+        a: asd ok Test Test
         script:
             ('injector = ' + log(toPrettyString($injector)));
         
