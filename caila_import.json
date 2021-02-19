@@ -1,0 +1,1611 @@
+{
+  "project" : {
+    "id" : "caila_test-248776874-mgk",
+    "name" : "caila_test-248776874-mgk",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "extendedSettings" : {
+      "allowedPatterns" : [ ]
+    },
+    "shared" : false
+  },
+  "intents" : [ {
+    "id" : 60597,
+    "path" : "/Date",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@Startdate"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Date",
+      "entity" : "duckling.date",
+      "required" : true,
+      "prompts" : [ "Введите дату." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60598,
+    "path" : "/GetMoney",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@Money"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Money",
+      "entity" : "Money",
+      "required" : true,
+      "prompts" : [ "Введите сумму." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60599,
+    "path" : "/GetNumber",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@duckling.number"
+    }, {
+      "text" : "@duckling.number человек"
+    }, {
+      "text" : "человек @duckling.number"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Number.number",
+      "entity" : "duckling.number",
+      "required" : true,
+      "prompts" : [ "Введите число" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60600,
+    "path" : "/GetNumberChildren",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@NumChildren_int"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "NumChildren",
+      "entity" : "NumChildren_int",
+      "required" : true,
+      "prompts" : [ "Сколько детей поедет?" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60601,
+    "path" : "/GetNumberPeople",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@NumPeople_int"
+    }, {
+      "text" : "@NumPeople"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "NumPeople",
+      "entity" : "NumPeople_int",
+      "required" : true,
+      "prompts" : [ "Укажите число людей." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60602,
+    "path" : "/GetStartdate",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@Startdate"
+    }, {
+      "text" : "май"
+    }, {
+      "text" : "с апреля по май "
+    }, {
+      "text" : "в марте"
+    }, {
+      "text" : "сегодня"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "StartDate",
+      "entity" : "duckling.time",
+      "required" : false,
+      "prompts" : [ "Введите, пожалуйста, корректную дату в формате 'dd.mm.yyyy'. Например, 01.02.2021." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60603,
+    "path" : "/Hotel",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@HotelStars"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "HotelStars",
+      "entity" : "HotelStars",
+      "required" : false,
+      "prompts" : [ "Сколько звёзд должно быть у отеля?" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60604,
+    "path" : "/Name",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@mystem.persn"
+    }, {
+      "text" : "@duckling.number"
+    }, {
+      "text" : "@mystem.persn @duckling.number"
+    }, {
+      "text" : "+79113445593"
+    }, {
+      "text" : "8 911 344 55 93"
+    }, {
+      "text" : "8 (911) 344 55 93"
+    }, {
+      "text" : "@mystem.persn +7 (911) 344 55 93"
+    }, {
+      "text" : "+7 (911) 344 55 93"
+    }, {
+      "text" : "+7 911 344 55 93"
+    }, {
+      "text" : "@mystem.persn @duckling.phone-number"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Name",
+      "entity" : "mystem.persn",
+      "required" : true,
+      "prompts" : [ "Как к Вам обращаться?" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60605,
+    "path" : "/NewTour_First",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@NewTourFirst"
+    }, {
+      "text" : "[оформить (тур|заявк*) в @City  @Startdate}"
+    }, {
+      "text" : "{(тур|заявк*) в @City  @Startdate}"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "City",
+      "entity" : "City",
+      "required" : false,
+      "prompts" : [ "В какую страну или город Вы хотите отправиться в путешествие?" ],
+      "array" : false
+    }, {
+      "name" : "StartDate",
+      "entity" : "duckling.date",
+      "required" : false,
+      "prompts" : [ "Когда Вы хотите отправиться в путешествие?" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60606,
+    "path" : "/NewTour_intent",
+    "answer" : "Давайте оформим тур!",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "мы поедем втроём"
+    }, {
+      "text" : "поедет 10 человек, 5 детей 2 мая на 10 дней. Интересует трёхзвёздочная гостиница"
+    }, {
+      "text" : "Здравствуйте! Возможно ли оформить путёвку через чат?"
+    }, {
+      "text" : "давай"
+    }, {
+      "text" : "давай оформим"
+    }, {
+      "text" : "давайте оформим"
+    }, {
+      "text" : "что для этого надо?"
+    }, {
+      "text" : "хочу в @City"
+    }, {
+      "text" : "тур в @City"
+    }, {
+      "text" : "@Duration"
+    }, {
+      "text" : "10 дней"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "NumPeople",
+      "entity" : "NumPeopleDef",
+      "required" : false,
+      "prompts" : [ "Сколько человек поедет?" ],
+      "array" : false
+    }, {
+      "name" : "NumChildren",
+      "entity" : "NumChildren",
+      "required" : false,
+      "prompts" : [ "Сколько детей будет в поездке?" ],
+      "array" : false
+    }, {
+      "name" : "Money_intent",
+      "entity" : "Money_intent",
+      "required" : false,
+      "prompts" : [ "Какой бюджет у планируемой поездки?" ],
+      "array" : false
+    }, {
+      "name" : "StartDate",
+      "entity" : "duckling.time",
+      "required" : false,
+      "prompts" : [ "Когда Вы хотели бы отправиться в путешествие?1" ],
+      "array" : false
+    }, {
+      "name" : "Duration",
+      "entity" : "Duration",
+      "required" : true,
+      "prompts" : [ "На сколько дней Вы бы хотели отправиться в тур?" ],
+      "array" : false
+    }, {
+      "name" : "HotelStars",
+      "entity" : "HotelStars2",
+      "required" : false,
+      "prompts" : [ "Сколько звёзд должно быть у отеля?" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60607,
+    "path" : "/Person",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@mystem.persn"
+    }, {
+      "text" : "@duckling.phone-number"
+    }, {
+      "text" : "@mystem.persn @duckling.phone-number"
+    }, {
+      "text" : "+7 911 344 55 93"
+    }, {
+      "text" : "+7 (911) 344 55 93"
+    }, {
+      "text" : "@mystem.persn +7 (911) 344 55 93"
+    }, {
+      "text" : "8 (911) 344 55 93"
+    }, {
+      "text" : "8 911 344 55 93"
+    }, {
+      "text" : "+79113445593"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Name",
+      "entity" : "mystem.persn",
+      "required" : true,
+      "prompts" : [ "Как к Вам можно обращаться?" ],
+      "array" : false
+    }, {
+      "name" : "Phone",
+      "entity" : "duckling.phone-number",
+      "required" : true,
+      "prompts" : [ "Сообщите, пожалуйста, телефон для связи в международном десятизначном формате, например, 89113445593, или в городском шестизначном, например, 451111, или в семизначном формате, например, 4111111." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60608,
+    "path" : "/Phone",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@mystem.persn @duckling.number"
+    }, {
+      "text" : "@duckling.number"
+    }, {
+      "text" : "+79113445593"
+    }, {
+      "text" : "8 911 344 55 93"
+    }, {
+      "text" : "8 (911) 344 55 93"
+    }, {
+      "text" : "@mystem.persn +7 (911) 344 55 93"
+    }, {
+      "text" : "+7 (911) 344 55 93"
+    }, {
+      "text" : "+7 911 344 55 93"
+    }, {
+      "text" : "@mystem.persn @duckling.phone-number"
+    }, {
+      "text" : "@duckling.phone-number"
+    }, {
+      "text" : "@mystem.persn"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Phone",
+      "entity" : "duckling.phone-number",
+      "required" : true,
+      "prompts" : [ "Сообщите, пожалуйста, телефон для связи в международном десятизначном формате, например, 89113445593 или в городском шестизначном, например, 451111, или семизначном формате, например, 4111111." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60609,
+    "path" : "/Season",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@Seasons"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Season",
+      "entity" : "Seasons",
+      "required" : true,
+      "prompts" : [ "Введите, пожалуйста, корректную дату в формате 'dd.mm.yyyy'. Например, 01.02.2021." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60610,
+    "path" : "/Weather",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Какая завтра погода в Берлине?"
+    }, {
+      "text" : "Здравствуйте, какая погода в Тампере?"
+    }, {
+      "text" : "тампере 2 мая"
+    }, {
+      "text" : "@Startdate * @City"
+    }, {
+      "text" : "погодка"
+    }, {
+      "text" : "погода"
+    }, {
+      "text" : "какая погода"
+    }, {
+      "text" : "Узнать погоду"
+    }, {
+      "text" : "Прогноз в @City @Startdate"
+    }, {
+      "text" : "Прогноз в питере сегодня"
+    }, {
+      "text" : "@City * @Startdate"
+    }, {
+      "text" : "завтра в Москве"
+    }, {
+      "text" : "@StartDate,@City"
+    }, {
+      "text" : "@City,@StartDate"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "City",
+      "entity" : "City",
+      "required" : true,
+      "prompts" : [ "Укажите, какая страна или какой город Вас интересует." ],
+      "array" : false
+    }, {
+      "name" : "StartDate",
+      "entity" : "duckling.time",
+      "required" : true,
+      "prompts" : [ " Укажите, пожалуйста, дату прогноза в формате 'dd.mm.yyyy' не раньше текущего дня. Например, 01.02.2021.", "Укажите, пожалуйста, корректную дату в формате 'dd.mm.yyyy' не раньше текущего дня. Например, 01.02.2021." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60611,
+    "path" : "/Weather_City",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@City"
+    }, {
+      "text" : "@Yes*@City"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "City",
+      "entity" : "City",
+      "required" : true,
+      "prompts" : [ "Укажите, какая страна или какой город Вас интересует?" ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60612,
+    "path" : "/Weather_Date",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "@Startdate"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Date",
+      "entity" : "duckling.time",
+      "required" : true,
+      "prompts" : [ " Укажите, пожалуйста, корректную дату в формате 'dd.mm.yyyy' не раньше завтрашнего дня. Например, 01.02.2021." ],
+      "array" : false
+    } ]
+  }, {
+    "id" : 60613,
+    "path" : "/пока",
+    "enabled" : false,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 60614,
+    "path" : "/привет",
+    "enabled" : false,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ],
+    "patterns" : [ ]
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "id" : 29346,
+      "name" : "Agree",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961013,
+      "type" : "pattern",
+      "rule" : [ "@AgreeStrong" ],
+      "value" : ""
+    }, {
+      "id" : 1961014,
+      "type" : "pattern",
+      "rule" : [ "@AgreeWeak" ],
+      "value" : ""
+    }, {
+      "id" : 1961015,
+      "type" : "pattern",
+      "rule" : [ "@Yes" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29347,
+      "name" : "AgreeStrong",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961016,
+      "type" : "pattern",
+      "rule" : [ "(конечно|конешно|канешна|а то [нет]|очень|[ты] прав*|абсолютно|обязательно|непременно|а как же|[я] подтверждаю|[совершенно|абсолютно] точно|пожалуй|запросто|норм|(почему/что/че) [бы] [и] нет|хочу|было [бы] (неплохо|не плохо)|[я] [очень] (хочу|хо чу|ладно|хорошо)|ладно|можно|валяй*|договорились|[я] [совершенно|абсолютно] [с (тобой/вами)] согла*|не могу [с (тобой/вами)] не согласиться|вполне|в полной мере|естественно|разумеется|(еще|ещё) как|[я] не (против|возражаю|сомневаюсь)|я только за|безусловн*|[это] так [и есть]|все (так|верно)|(совершенно|абсолютно) верно)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29348,
+      "name" : "AgreeWeak",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961017,
+      "type" : "pattern",
+      "rule" : [ "(давай|давайте|логично|могу|было дело|бывало|бывает)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29349,
+      "name" : "City",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961018,
+      "type" : "pattern",
+      "rule" : [ "@mystem.geo" ],
+      "value" : ""
+    }, {
+      "id" : 1961019,
+      "type" : "pattern",
+      "rule" : [ "(Вена|вена|Вене|вене|Вену|вену)" ],
+      "value" : "Вена"
+    }, {
+      "id" : 1961020,
+      "type" : "pattern",
+      "rule" : [ "(Египет|египет|Египта|египта|Египте|египте)" ],
+      "value" : "Египет"
+    }, {
+      "id" : 1961021,
+      "type" : "pattern",
+      "rule" : [ "(Крым|крым|Крыму|крыму|Крыме|крыме)" ],
+      "value" : "Крым"
+    }, {
+      "id" : 1961022,
+      "type" : "pattern",
+      "rule" : [ "(Мальдивы|мальдивы|Мальдивах|мальдивах|мальдив|Мальдив)" ],
+      "value" : "Мальдивы"
+    }, {
+      "id" : 1961023,
+      "type" : "pattern",
+      "rule" : [ "(Москва|мск|Москоу|МСК|Москву)" ],
+      "value" : "Москва"
+    }, {
+      "id" : 1961024,
+      "type" : "pattern",
+      "rule" : [ "(Перу|перу)" ],
+      "value" : "Перу"
+    }, {
+      "id" : 1961025,
+      "type" : "pattern",
+      "rule" : [ "(Питер*|спб|Cпб|Петербург*|Санкт-Петербург*)" ],
+      "value" : "Санкт-Петербург"
+    }, {
+      "id" : 1961026,
+      "type" : "pattern",
+      "rule" : [ "(Рига|Риге|Ригу|рига|риге|ригу)" ],
+      "value" : "Рига"
+    }, {
+      "id" : 1961027,
+      "type" : "synonyms",
+      "rule" : [ "(Рио|рио)" ],
+      "value" : "Рио-де-Жанейро"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29350,
+      "name" : "Date_via_regexp",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961028,
+      "type" : "pattern",
+      "rule" : [ "$regexp<\\d{1}\\.\\d{2}>" ],
+      "value" : ""
+    }, {
+      "id" : 1961029,
+      "type" : "pattern",
+      "rule" : [ "$regexp<\\d{1}\\\\d{2}>" ],
+      "value" : ""
+    }, {
+      "id" : 1961030,
+      "type" : "pattern",
+      "rule" : [ "$regexp<\\d{2}\\.\\d{2}>" ],
+      "value" : ""
+    }, {
+      "id" : 1961031,
+      "type" : "pattern",
+      "rule" : [ "$regexp<\\d{2}\\\\d{2}>" ],
+      "value" : ""
+    }, {
+      "id" : 1961032,
+      "type" : "pattern",
+      "rule" : [ "$regexp<^\\w*(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря) \\d{1,2}, \\d{4}>" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29351,
+      "name" : "Disagree",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961033,
+      "type" : "pattern",
+      "rule" : [ "@DisagreeStrong" ],
+      "value" : ""
+    }, {
+      "id" : 1961034,
+      "type" : "pattern",
+      "rule" : [ "@DisagreeWeak" ],
+      "value" : ""
+    }, {
+      "id" : 1961035,
+      "type" : "pattern",
+      "rule" : [ "@No" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29352,
+      "name" : "DisagreeStrong",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961036,
+      "type" : "pattern",
+      "rule" : [ "[@No|конечно|конешно|канешна] (@No|не сейчас/ни капли/отнюдь/да ладно/[я] не (хоч*|хо чу|надо|могу|очень|думаю|нравится|стоит|буду|считаю|согла*|подтв*)|ненадо|нельзя|нехочу|ненавижу|невозможно|никогда|никуда|ни за что|никак*|никто|ниразу|[я] против|вряд ли|сомневаюсь|неправильно|неверно|невсегда|[это] {не так}|отказываюсь) [(конечно|конешно|канешна|спасибо)]" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29353,
+      "name" : "DisagreeWeak",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961037,
+      "type" : "pattern",
+      "rule" : [ "(да ну|не|нее|ничего)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29354,
+      "name" : "Dont_know",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961038,
+      "type" : "pattern",
+      "rule" : [ "(не знаю|незнаю|не важно|неважно|без раз*|безраз*|всеравно|равно|поф*|по ф*|похр*|по хр*|не принц*|непринц*|не решил*|нерешил*|безпонят*|без понят*|любо*|-|не определил*|неопределил*)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29355,
+      "name" : "Duration",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961039,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961040,
+      "type" : "pattern",
+      "rule" : [ "@duckling.duration" ],
+      "value" : ""
+    }, {
+      "id" : 1961041,
+      "type" : "pattern",
+      "rule" : [ "@duckling.number" ],
+      "value" : ""
+    }, {
+      "id" : 1961042,
+      "type" : "pattern",
+      "rule" : [ "@duckling.number дн*" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29356,
+      "name" : "HotelStars",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961043,
+      "type" : "pattern",
+      "rule" : [ "(1|одн*) [зв*]" ],
+      "value" : "1"
+    }, {
+      "id" : 1961044,
+      "type" : "pattern",
+      "rule" : [ "(1|одн*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "1"
+    }, {
+      "id" : 1961045,
+      "type" : "pattern",
+      "rule" : [ "(2|дв*) [зв*]" ],
+      "value" : "2"
+    }, {
+      "id" : 1961046,
+      "type" : "pattern",
+      "rule" : [ "(2|дв*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "2"
+    }, {
+      "id" : 1961047,
+      "type" : "pattern",
+      "rule" : [ "(3|тр*) [зв*]" ],
+      "value" : "3"
+    }, {
+      "id" : 1961048,
+      "type" : "pattern",
+      "rule" : [ "(3|тр*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "3"
+    }, {
+      "id" : 1961049,
+      "type" : "pattern",
+      "rule" : [ "(4|четыр*) [зв*]" ],
+      "value" : "4"
+    }, {
+      "id" : 1961050,
+      "type" : "pattern",
+      "rule" : [ "(4|четыр*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "4"
+    }, {
+      "id" : 1961051,
+      "type" : "pattern",
+      "rule" : [ "(5|пят*) [зв*]" ],
+      "value" : "5"
+    }, {
+      "id" : 1961052,
+      "type" : "pattern",
+      "rule" : [ "(5|пят*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "5"
+    }, {
+      "id" : 1961053,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961054,
+      "type" : "pattern",
+      "rule" : [ "без (зв*)" ],
+      "value" : "-"
+    }, {
+      "id" : 1961055,
+      "type" : "pattern",
+      "rule" : [ "двухзв*" ],
+      "value" : "2"
+    }, {
+      "id" : 1961056,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (1|одн*) [зв*]" ],
+      "value" : "меньше 1"
+    }, {
+      "id" : 1961057,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (2|дв*) [зв*]" ],
+      "value" : "меньше 2"
+    }, {
+      "id" : 1961058,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (3|тр*) [зв*]" ],
+      "value" : "меньше 3"
+    }, {
+      "id" : 1961059,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (4|четыр*) [зв*]" ],
+      "value" : "меньше 4"
+    }, {
+      "id" : 1961060,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (5|пят*) [зв*]" ],
+      "value" : "меньше 5"
+    }, {
+      "id" : 1961061,
+      "type" : "pattern",
+      "rule" : [ "люб*" ],
+      "value" : "любой"
+    }, {
+      "id" : 1961062,
+      "type" : "pattern",
+      "rule" : [ "однозв*" ],
+      "value" : "1"
+    }, {
+      "id" : 1961063,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*)  (1|одн*) [зв*]" ],
+      "value" : "больше 1"
+    }, {
+      "id" : 1961064,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*)  (2|дв*) [зв*]" ],
+      "value" : "больше 2"
+    }, {
+      "id" : 1961065,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*)  (3|тр*) [зв*]" ],
+      "value" : "больше 3"
+    }, {
+      "id" : 1961066,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*)  (4|четыр*) [зв*]" ],
+      "value" : "больше 4"
+    }, {
+      "id" : 1961067,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*)  (5|пят*) [зв*]" ],
+      "value" : "больше 5"
+    }, {
+      "id" : 1961068,
+      "type" : "pattern",
+      "rule" : [ "пятизв*" ],
+      "value" : "5"
+    }, {
+      "id" : 1961069,
+      "type" : "pattern",
+      "rule" : [ "трехзв*" ],
+      "value" : "3"
+    }, {
+      "id" : 1961070,
+      "type" : "pattern",
+      "rule" : [ "четырехзв*" ],
+      "value" : "4"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29357,
+      "name" : "HotelStars2",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961071,
+      "type" : "pattern",
+      "rule" : [ "(1|одн*) (зв*)" ],
+      "value" : "1"
+    }, {
+      "id" : 1961072,
+      "type" : "pattern",
+      "rule" : [ "(1|одн*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "1"
+    }, {
+      "id" : 1961073,
+      "type" : "pattern",
+      "rule" : [ "(2|дв*) (зв*)" ],
+      "value" : "2"
+    }, {
+      "id" : 1961074,
+      "type" : "pattern",
+      "rule" : [ "(2|дв*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "2"
+    }, {
+      "id" : 1961075,
+      "type" : "pattern",
+      "rule" : [ "(3|тр*) (зв*)" ],
+      "value" : "3"
+    }, {
+      "id" : 1961076,
+      "type" : "pattern",
+      "rule" : [ "(3|тр*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "3"
+    }, {
+      "id" : 1961077,
+      "type" : "pattern",
+      "rule" : [ "(4|четыр*) (зв*)" ],
+      "value" : "4"
+    }, {
+      "id" : 1961078,
+      "type" : "pattern",
+      "rule" : [ "(4|четыр*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "4"
+    }, {
+      "id" : 1961079,
+      "type" : "pattern",
+      "rule" : [ "(5|пят*) (зв*)" ],
+      "value" : "5"
+    }, {
+      "id" : 1961080,
+      "type" : "pattern",
+      "rule" : [ "(5|пят*) [зв*] (гостин*|отел*|мотел*)" ],
+      "value" : "5"
+    }, {
+      "id" : 1961081,
+      "type" : "pattern",
+      "rule" : [ "без (зв*)" ],
+      "value" : "-"
+    }, {
+      "id" : 1961082,
+      "type" : "pattern",
+      "rule" : [ "двухзв*" ],
+      "value" : "2"
+    }, {
+      "id" : 1961083,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (1|одн*) [зв*]" ],
+      "value" : "меньше 1"
+    }, {
+      "id" : 1961084,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (2|дв*) [зв*]" ],
+      "value" : "меньше 2"
+    }, {
+      "id" : 1961085,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (3|тр*) [зв*]" ],
+      "value" : "меньше 3"
+    }, {
+      "id" : 1961086,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (4|четыр*) [зв*]" ],
+      "value" : "меньше 4"
+    }, {
+      "id" : 1961087,
+      "type" : "pattern",
+      "rule" : [ "(до|мен*|не бол*) (5|пят*) [зв*]" ],
+      "value" : "меньше 5"
+    }, {
+      "id" : 1961088,
+      "type" : "pattern",
+      "rule" : [ "люб*" ],
+      "value" : "любой"
+    }, {
+      "id" : 1961089,
+      "type" : "pattern",
+      "rule" : [ "однозв*" ],
+      "value" : "1"
+    }, {
+      "id" : 1961090,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*)  (1|одн*) [зв*]" ],
+      "value" : "больше 1"
+    }, {
+      "id" : 1961091,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*) (2|дв*) [зв*]" ],
+      "value" : "больше 2"
+    }, {
+      "id" : 1961092,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*) (3|тр*) [зв*]" ],
+      "value" : "больше 3"
+    }, {
+      "id" : 1961093,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*) (4|четыр*) [зв*]" ],
+      "value" : "больше 4"
+    }, {
+      "id" : 1961094,
+      "type" : "pattern",
+      "rule" : [ "(от|бол*|не мен*) (5|пят*) [зв*]" ],
+      "value" : "больше 5"
+    }, {
+      "id" : 1961095,
+      "type" : "pattern",
+      "rule" : [ "пятизв*" ],
+      "value" : "5"
+    }, {
+      "id" : 1961096,
+      "type" : "pattern",
+      "rule" : [ "трехзв*" ],
+      "value" : "3"
+    }, {
+      "id" : 1961097,
+      "type" : "synonyms",
+      "rule" : [ "четырехзв*" ],
+      "value" : "4"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29358,
+      "name" : "Money",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961098,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961099,
+      "type" : "pattern",
+      "rule" : [ "@duckling.amount-of-money" ],
+      "value" : ""
+    }, {
+      "id" : 1961100,
+      "type" : "pattern",
+      "rule" : [ "@duckling.number" ],
+      "value" : ""
+    }, {
+      "id" : 1961101,
+      "type" : "pattern",
+      "rule" : [ "$regexp<\\d*р>" ],
+      "value" : ""
+    }, {
+      "id" : 1961102,
+      "type" : "pattern",
+      "rule" : [ "(эконом*|стандарт*|комфорт*|минимальн*|бюджедн*|любо*|без ограничен*)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29359,
+      "name" : "Money_intent",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961103,
+      "type" : "pattern",
+      "rule" : [ "@duckling.amount-of-money" ],
+      "value" : ""
+    }, {
+      "id" : 1961104,
+      "type" : "pattern",
+      "rule" : [ "$regexp<\\d*р>" ],
+      "value" : ""
+    }, {
+      "id" : 1961105,
+      "type" : "pattern",
+      "rule" : [ "(эконом*|стандарт*|комфорт*|минимальн*|бюджедн*|любо*|без ограничен*)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29360,
+      "name" : "NewTour",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961106,
+      "type" : "pattern",
+      "rule" : [ "({нов* тур*}|нов*)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29361,
+      "name" : "NewTourFirst",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961107,
+      "type" : "pattern",
+      "rule" : [ "{@City в (тур*|поезд*|путешеств*|пакет*)}" ],
+      "value" : ""
+    }, {
+      "id" : 1961108,
+      "type" : "pattern",
+      "rule" : [ "{@City в (тур*|поезд*|путешеств*|пакет*) @Startdate}" ],
+      "value" : ""
+    }, {
+      "id" : 1961109,
+      "type" : "pattern",
+      "rule" : [ "(тур*|поезд*|путешеств*|пакет*)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29362,
+      "name" : "No",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961110,
+      "type" : "pattern",
+      "rule" : [ "(нет|неат|ниат|неа|ноуп|ноу|найн) [нет] [спасибо]" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29363,
+      "name" : "NoChildren",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961111,
+      "type" : "pattern",
+      "rule" : [ "без (дет*|дит*|реб*|них|него|неё|нее)" ],
+      "value" : "0"
+    }, {
+      "id" : 1961112,
+      "type" : "pattern",
+      "rule" : [ "(ни одного|ноль|0)" ],
+      "value" : "0"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29364,
+      "name" : "NumChildren",
+      "enabled" : false,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961113,
+      "type" : "pattern",
+      "rule" : [ "@Disagree" ],
+      "value" : "0"
+    }, {
+      "id" : 1961114,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961115,
+      "type" : "pattern",
+      "rule" : [ "@duckling.number (дет*|реб*)" ],
+      "value" : ""
+    }, {
+      "id" : 1961116,
+      "type" : "pattern",
+      "rule" : [ "(дет*|реб*) @duckling.number" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29365,
+      "name" : "NumChildren_int",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961117,
+      "type" : "pattern",
+      "rule" : [ "@Disagree" ],
+      "value" : "0"
+    }, {
+      "id" : 1961118,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961119,
+      "type" : "pattern",
+      "rule" : [ "@duckling.number" ],
+      "value" : ""
+    }, {
+      "id" : 1961120,
+      "type" : "pattern",
+      "rule" : [ "@NoChildren" ],
+      "value" : "0"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29366,
+      "name" : "NumPeople",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961121,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961122,
+      "type" : "pattern",
+      "rule" : [ "{@duckling.number (челов*)}" ],
+      "value" : ""
+    }, {
+      "id" : 1961123,
+      "type" : "pattern",
+      "rule" : [ "(челов*) @duckling.number " ],
+      "value" : ""
+    }, {
+      "id" : 1961124,
+      "type" : "pattern",
+      "rule" : [ "(я|сам*|один|одна)" ],
+      "value" : "1"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29367,
+      "name" : "NumPeopleDef",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961125,
+      "type" : "pattern",
+      "rule" : [ "{@duckling.number челов*}" ],
+      "value" : ""
+    }, {
+      "id" : 1961126,
+      "type" : "pattern",
+      "rule" : [ "(челов*) @duckling.number " ],
+      "value" : ""
+    }, {
+      "id" : 1961127,
+      "type" : "pattern",
+      "rule" : [ "(я|сам*|один|одна)" ],
+      "value" : "1"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29368,
+      "name" : "NumPeople_int",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961128,
+      "type" : "pattern",
+      "rule" : [ "@duckling.number" ],
+      "value" : ""
+    }, {
+      "id" : 1961129,
+      "type" : "pattern",
+      "rule" : [ "@NumPeople" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29369,
+      "name" : "PreviousTour",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961130,
+      "type" : "pattern",
+      "rule" : [ "(продолж*|вернуть*|стар*|прошлы*|предыдущ*|прежн*)" ],
+      "value" : ""
+    }, {
+      "id" : 1961131,
+      "type" : "pattern",
+      "rule" : [ "{(стар*|прошлы*|предыдущ*) тур*}" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29370,
+      "name" : "Seasons",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961132,
+      "type" : "pattern",
+      "rule" : [ "весн*" ],
+      "value" : "Весна"
+    }, {
+      "id" : 1961133,
+      "type" : "pattern",
+      "rule" : [ "зим*" ],
+      "value" : "Зима"
+    }, {
+      "id" : 1961134,
+      "type" : "pattern",
+      "rule" : [ "лето*" ],
+      "value" : "Лето"
+    }, {
+      "id" : 1961135,
+      "type" : "synonyms",
+      "rule" : [ "осень*" ],
+      "value" : "Осень"
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29371,
+      "name" : "Startdate",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961136,
+      "type" : "pattern",
+      "rule" : [ "@Dont_know" ],
+      "value" : "-"
+    }, {
+      "id" : 1961137,
+      "type" : "pattern",
+      "rule" : [ "@duckling.time" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 29372,
+      "name" : "Yes",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 1961138,
+      "type" : "pattern",
+      "rule" : [ "[ну] [конечно|всё|все|вроде|пожалуй|возможно] (да|даа|lf|ага|агась|точно|угу|верно|ок|ok|окей|окай|okay|оке|именно|подтвержд*|йес) [да|конечно|конешно|канешна|всё|все|вроде|пожалуй|возможно]" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "mystem.geo", "pymorphy.geox", "duckling.number", "duckling.time", "duckling.date" ],
+  "spellerDictionary" : [ {
+    "word" : "2к",
+    "frequency" : 3
+  }, {
+    "word" : "200к",
+    "frequency" : -1
+  }, {
+    "word" : "20th",
+    "frequency" : 2
+  } ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : true
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : true
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v1",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v1",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v1",
+    "enabled" : false
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.email",
+    "version" : "v1",
+    "enabled" : false
+  }, {
+    "name" : "duckling.url",
+    "version" : "v1",
+    "enabled" : false
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ]
+}

@@ -1,7 +1,7 @@
-name: games-test
+name: zb-cailapub
 
 entryPoint:
-  - madddddin.sc
+  - main.sc
 
 botEngine: v2
 language: ru
@@ -11,3 +11,18 @@ sts:
 
 caila:
     noMatchThreshold: 0.2
+
+injector:
+  api_get_coord_key: 'pk.eyJ1IjoiZXZnZW5paTAiLCJhIjoiY2tja2d6azZvMDZoazJ5cnpwd2dtcDF1NCJ9.57T1R6jPHtnHRnrni-HEJQ'
+  api_key: 'pCIvCHwwFiNDYPbJFHZQfa62Bd6PCKDX'
+  slotfilling:
+        maxSlotRetries: 5
+        stopOnAnyIntent: false
+        stopOnAnyIntentThreshold: 0.2
+#   smtp:
+#     host: smtp.rambler.ru                  # хост SMTP-сервера
+#     port: 587                              # порт SMTP-сервера
+#     from: sertification20@rambler.ru       # отправитель
+#     user: sertification20@rambler.ru       # пользователь SMTP-сервера
+#     password: 9pj-xXc-qvB-GGx              # пароль SMTP-сервера
+

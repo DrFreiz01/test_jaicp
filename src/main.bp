@@ -1,0 +1,39 @@
+{
+  "positions" : [ {
+    "id" : "/Tour/CreateNewTour",
+    "x" : 560,
+    "y" : 1100
+  }, {
+    "id" : "/Tour/Weather",
+    "x" : 560,
+    "y" : 734
+  }, {
+    "id" : "/Tour/AskContactData",
+    "x" : 560,
+    "y" : 980
+  }, {
+    "id" : "/NoMatch",
+    "x" : 220,
+    "y" : 1020
+  }, {
+    "id" : "/Tour/NewTour",
+    "x" : 560,
+    "y" : 438
+  }, {
+    "id" : "/Start",
+    "x" : 220,
+    "y" : 488
+  }, {
+    "id" : "/Bye",
+    "x" : 220,
+    "y" : 748
+  }, {
+    "id" : "/Restart",
+    "x" : 220,
+    "y" : 192
+  }, {
+    "id" : "/Tour/CreateNewTour/GetTextOfComment/Comment",
+    "x" : 560,
+    "y" : 192
+  } ]
+}
