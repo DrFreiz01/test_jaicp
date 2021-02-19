@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "caila_test-248776874-mgk",
-    "name" : "caila_test-248776874-mgk",
+    "id" : "test_git-248776874-Nhk",
+    "name" : "test_git-248776874-Nhk",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -15,7 +15,7 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 60597,
+    "id" : 60765,
     "path" : "/Date",
     "enabled" : true,
     "shared" : false,
@@ -31,7 +31,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60598,
+    "id" : 60766,
     "path" : "/GetMoney",
     "enabled" : true,
     "shared" : false,
@@ -47,7 +47,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60599,
+    "id" : 60767,
     "path" : "/GetNumber",
     "enabled" : true,
     "shared" : false,
@@ -67,7 +67,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60600,
+    "id" : 60768,
     "path" : "/GetNumberChildren",
     "enabled" : true,
     "shared" : false,
@@ -83,7 +83,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60601,
+    "id" : 60769,
     "path" : "/GetNumberPeople",
     "enabled" : true,
     "shared" : false,
@@ -101,7 +101,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60602,
+    "id" : 60770,
     "path" : "/GetStartdate",
     "enabled" : true,
     "shared" : false,
@@ -125,7 +125,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60603,
+    "id" : 60771,
     "path" : "/Hotel",
     "enabled" : true,
     "shared" : false,
@@ -141,7 +141,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60604,
+    "id" : 60772,
     "path" : "/Name",
     "enabled" : true,
     "shared" : false,
@@ -175,7 +175,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60605,
+    "id" : 60773,
     "path" : "/NewTour_First",
     "enabled" : true,
     "shared" : false,
@@ -201,7 +201,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60606,
+    "id" : 60774,
     "path" : "/NewTour_intent",
     "answer" : "Давайте оформим тур!",
     "enabled" : true,
@@ -268,7 +268,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60607,
+    "id" : 60775,
     "path" : "/Person",
     "enabled" : true,
     "shared" : false,
@@ -306,7 +306,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60608,
+    "id" : 60776,
     "path" : "/Phone",
     "enabled" : true,
     "shared" : false,
@@ -342,7 +342,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60609,
+    "id" : 60777,
     "path" : "/Season",
     "enabled" : true,
     "shared" : false,
@@ -358,7 +358,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60610,
+    "id" : 60778,
     "path" : "/Weather",
     "enabled" : true,
     "shared" : false,
@@ -406,7 +406,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60611,
+    "id" : 60779,
     "path" : "/Weather_City",
     "enabled" : true,
     "shared" : false,
@@ -424,7 +424,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60612,
+    "id" : 60780,
     "path" : "/Weather_Date",
     "enabled" : true,
     "shared" : false,
@@ -440,7 +440,7 @@
       "array" : false
     } ]
   }, {
-    "id" : 60613,
+    "id" : 60781,
     "path" : "/пока",
     "enabled" : false,
     "shared" : false,
@@ -449,7 +449,7 @@
     } ],
     "patterns" : [ ]
   }, {
-    "id" : 60614,
+    "id" : 60782,
     "path" : "/привет",
     "enabled" : false,
     "shared" : false,
@@ -460,7 +460,7 @@
   } ],
   "entities" : [ {
     "entity" : {
-      "id" : 29346,
+      "id" : 29488,
       "name" : "Agree",
       "enabled" : true,
       "shared" : false,
@@ -473,24 +473,24 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961013,
+      "id" : 1966066,
       "type" : "pattern",
       "rule" : [ "@AgreeStrong" ],
       "value" : ""
     }, {
-      "id" : 1961014,
+      "id" : 1966067,
       "type" : "pattern",
       "rule" : [ "@AgreeWeak" ],
       "value" : ""
     }, {
-      "id" : 1961015,
+      "id" : 1966068,
       "type" : "pattern",
       "rule" : [ "@Yes" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29347,
+      "id" : 29489,
       "name" : "AgreeStrong",
       "enabled" : true,
       "shared" : false,
@@ -503,14 +503,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961016,
+      "id" : 1966069,
       "type" : "pattern",
       "rule" : [ "(конечно|конешно|канешна|а то [нет]|очень|[ты] прав*|абсолютно|обязательно|непременно|а как же|[я] подтверждаю|[совершенно|абсолютно] точно|пожалуй|запросто|норм|(почему/что/че) [бы] [и] нет|хочу|было [бы] (неплохо|не плохо)|[я] [очень] (хочу|хо чу|ладно|хорошо)|ладно|можно|валяй*|договорились|[я] [совершенно|абсолютно] [с (тобой/вами)] согла*|не могу [с (тобой/вами)] не согласиться|вполне|в полной мере|естественно|разумеется|(еще|ещё) как|[я] не (против|возражаю|сомневаюсь)|я только за|безусловн*|[это] так [и есть]|все (так|верно)|(совершенно|абсолютно) верно)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29348,
+      "id" : 29490,
       "name" : "AgreeWeak",
       "enabled" : true,
       "shared" : false,
@@ -523,14 +523,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961017,
+      "id" : 1966070,
       "type" : "pattern",
       "rule" : [ "(давай|давайте|логично|могу|было дело|бывало|бывает)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29349,
+      "id" : 29491,
       "name" : "City",
       "enabled" : true,
       "shared" : false,
@@ -543,59 +543,59 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961018,
+      "id" : 1966071,
       "type" : "pattern",
       "rule" : [ "@mystem.geo" ],
       "value" : ""
     }, {
-      "id" : 1961019,
+      "id" : 1966072,
       "type" : "pattern",
       "rule" : [ "(Вена|вена|Вене|вене|Вену|вену)" ],
       "value" : "Вена"
     }, {
-      "id" : 1961020,
+      "id" : 1966073,
       "type" : "pattern",
       "rule" : [ "(Египет|египет|Египта|египта|Египте|египте)" ],
       "value" : "Египет"
     }, {
-      "id" : 1961021,
+      "id" : 1966074,
       "type" : "pattern",
       "rule" : [ "(Крым|крым|Крыму|крыму|Крыме|крыме)" ],
       "value" : "Крым"
     }, {
-      "id" : 1961022,
+      "id" : 1966075,
       "type" : "pattern",
       "rule" : [ "(Мальдивы|мальдивы|Мальдивах|мальдивах|мальдив|Мальдив)" ],
       "value" : "Мальдивы"
     }, {
-      "id" : 1961023,
+      "id" : 1966076,
       "type" : "pattern",
       "rule" : [ "(Москва|мск|Москоу|МСК|Москву)" ],
       "value" : "Москва"
     }, {
-      "id" : 1961024,
+      "id" : 1966077,
       "type" : "pattern",
       "rule" : [ "(Перу|перу)" ],
       "value" : "Перу"
     }, {
-      "id" : 1961025,
+      "id" : 1966078,
       "type" : "pattern",
       "rule" : [ "(Питер*|спб|Cпб|Петербург*|Санкт-Петербург*)" ],
       "value" : "Санкт-Петербург"
     }, {
-      "id" : 1961026,
+      "id" : 1966079,
       "type" : "pattern",
       "rule" : [ "(Рига|Риге|Ригу|рига|риге|ригу)" ],
       "value" : "Рига"
     }, {
-      "id" : 1961027,
+      "id" : 1966080,
       "type" : "synonyms",
       "rule" : [ "(Рио|рио)" ],
       "value" : "Рио-де-Жанейро"
     } ]
   }, {
     "entity" : {
-      "id" : 29350,
+      "id" : 29492,
       "name" : "Date_via_regexp",
       "enabled" : true,
       "shared" : false,
@@ -608,34 +608,34 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961028,
+      "id" : 1966081,
       "type" : "pattern",
       "rule" : [ "$regexp<\\d{1}\\.\\d{2}>" ],
       "value" : ""
     }, {
-      "id" : 1961029,
+      "id" : 1966082,
       "type" : "pattern",
       "rule" : [ "$regexp<\\d{1}\\\\d{2}>" ],
       "value" : ""
     }, {
-      "id" : 1961030,
+      "id" : 1966083,
       "type" : "pattern",
       "rule" : [ "$regexp<\\d{2}\\.\\d{2}>" ],
       "value" : ""
     }, {
-      "id" : 1961031,
+      "id" : 1966084,
       "type" : "pattern",
       "rule" : [ "$regexp<\\d{2}\\\\d{2}>" ],
       "value" : ""
     }, {
-      "id" : 1961032,
+      "id" : 1966085,
       "type" : "pattern",
       "rule" : [ "$regexp<^\\w*(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря) \\d{1,2}, \\d{4}>" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29351,
+      "id" : 29493,
       "name" : "Disagree",
       "enabled" : true,
       "shared" : false,
@@ -648,24 +648,24 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961033,
+      "id" : 1966086,
       "type" : "pattern",
       "rule" : [ "@DisagreeStrong" ],
       "value" : ""
     }, {
-      "id" : 1961034,
+      "id" : 1966087,
       "type" : "pattern",
       "rule" : [ "@DisagreeWeak" ],
       "value" : ""
     }, {
-      "id" : 1961035,
+      "id" : 1966088,
       "type" : "pattern",
       "rule" : [ "@No" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29352,
+      "id" : 29494,
       "name" : "DisagreeStrong",
       "enabled" : true,
       "shared" : false,
@@ -678,14 +678,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961036,
+      "id" : 1966089,
       "type" : "pattern",
       "rule" : [ "[@No|конечно|конешно|канешна] (@No|не сейчас/ни капли/отнюдь/да ладно/[я] не (хоч*|хо чу|надо|могу|очень|думаю|нравится|стоит|буду|считаю|согла*|подтв*)|ненадо|нельзя|нехочу|ненавижу|невозможно|никогда|никуда|ни за что|никак*|никто|ниразу|[я] против|вряд ли|сомневаюсь|неправильно|неверно|невсегда|[это] {не так}|отказываюсь) [(конечно|конешно|канешна|спасибо)]" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29353,
+      "id" : 29495,
       "name" : "DisagreeWeak",
       "enabled" : true,
       "shared" : false,
@@ -698,14 +698,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961037,
+      "id" : 1966090,
       "type" : "pattern",
       "rule" : [ "(да ну|не|нее|ничего)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29354,
+      "id" : 29496,
       "name" : "Dont_know",
       "enabled" : true,
       "shared" : false,
@@ -718,14 +718,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961038,
+      "id" : 1966091,
       "type" : "pattern",
       "rule" : [ "(не знаю|незнаю|не важно|неважно|без раз*|безраз*|всеравно|равно|поф*|по ф*|похр*|по хр*|не принц*|непринц*|не решил*|нерешил*|безпонят*|без понят*|любо*|-|не определил*|неопределил*)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29355,
+      "id" : 29497,
       "name" : "Duration",
       "enabled" : true,
       "shared" : false,
@@ -738,29 +738,29 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961039,
+      "id" : 1966092,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961040,
+      "id" : 1966093,
       "type" : "pattern",
       "rule" : [ "@duckling.duration" ],
       "value" : ""
     }, {
-      "id" : 1961041,
+      "id" : 1966094,
       "type" : "pattern",
       "rule" : [ "@duckling.number" ],
       "value" : ""
     }, {
-      "id" : 1961042,
+      "id" : 1966095,
       "type" : "pattern",
       "rule" : [ "@duckling.number дн*" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29356,
+      "id" : 29498,
       "name" : "HotelStars",
       "enabled" : true,
       "shared" : false,
@@ -773,149 +773,149 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961043,
+      "id" : 1966096,
       "type" : "pattern",
       "rule" : [ "(1|одн*) [зв*]" ],
       "value" : "1"
     }, {
-      "id" : 1961044,
+      "id" : 1966097,
       "type" : "pattern",
       "rule" : [ "(1|одн*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "1"
     }, {
-      "id" : 1961045,
+      "id" : 1966098,
       "type" : "pattern",
       "rule" : [ "(2|дв*) [зв*]" ],
       "value" : "2"
     }, {
-      "id" : 1961046,
+      "id" : 1966099,
       "type" : "pattern",
       "rule" : [ "(2|дв*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "2"
     }, {
-      "id" : 1961047,
+      "id" : 1966100,
       "type" : "pattern",
       "rule" : [ "(3|тр*) [зв*]" ],
       "value" : "3"
     }, {
-      "id" : 1961048,
+      "id" : 1966101,
       "type" : "pattern",
       "rule" : [ "(3|тр*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "3"
     }, {
-      "id" : 1961049,
+      "id" : 1966102,
       "type" : "pattern",
       "rule" : [ "(4|четыр*) [зв*]" ],
       "value" : "4"
     }, {
-      "id" : 1961050,
+      "id" : 1966103,
       "type" : "pattern",
       "rule" : [ "(4|четыр*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "4"
     }, {
-      "id" : 1961051,
+      "id" : 1966104,
       "type" : "pattern",
       "rule" : [ "(5|пят*) [зв*]" ],
       "value" : "5"
     }, {
-      "id" : 1961052,
+      "id" : 1966105,
       "type" : "pattern",
       "rule" : [ "(5|пят*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "5"
     }, {
-      "id" : 1961053,
+      "id" : 1966106,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961054,
+      "id" : 1966107,
       "type" : "pattern",
       "rule" : [ "без (зв*)" ],
       "value" : "-"
     }, {
-      "id" : 1961055,
+      "id" : 1966108,
       "type" : "pattern",
       "rule" : [ "двухзв*" ],
       "value" : "2"
     }, {
-      "id" : 1961056,
+      "id" : 1966109,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (1|одн*) [зв*]" ],
       "value" : "меньше 1"
     }, {
-      "id" : 1961057,
+      "id" : 1966110,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (2|дв*) [зв*]" ],
       "value" : "меньше 2"
     }, {
-      "id" : 1961058,
+      "id" : 1966111,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (3|тр*) [зв*]" ],
       "value" : "меньше 3"
     }, {
-      "id" : 1961059,
+      "id" : 1966112,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (4|четыр*) [зв*]" ],
       "value" : "меньше 4"
     }, {
-      "id" : 1961060,
+      "id" : 1966113,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (5|пят*) [зв*]" ],
       "value" : "меньше 5"
     }, {
-      "id" : 1961061,
+      "id" : 1966114,
       "type" : "pattern",
       "rule" : [ "люб*" ],
       "value" : "любой"
     }, {
-      "id" : 1961062,
+      "id" : 1966115,
       "type" : "pattern",
       "rule" : [ "однозв*" ],
       "value" : "1"
     }, {
-      "id" : 1961063,
+      "id" : 1966116,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*)  (1|одн*) [зв*]" ],
       "value" : "больше 1"
     }, {
-      "id" : 1961064,
+      "id" : 1966117,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*)  (2|дв*) [зв*]" ],
       "value" : "больше 2"
     }, {
-      "id" : 1961065,
+      "id" : 1966118,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*)  (3|тр*) [зв*]" ],
       "value" : "больше 3"
     }, {
-      "id" : 1961066,
+      "id" : 1966119,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*)  (4|четыр*) [зв*]" ],
       "value" : "больше 4"
     }, {
-      "id" : 1961067,
+      "id" : 1966120,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*)  (5|пят*) [зв*]" ],
       "value" : "больше 5"
     }, {
-      "id" : 1961068,
+      "id" : 1966121,
       "type" : "pattern",
       "rule" : [ "пятизв*" ],
       "value" : "5"
     }, {
-      "id" : 1961069,
+      "id" : 1966122,
       "type" : "pattern",
       "rule" : [ "трехзв*" ],
       "value" : "3"
     }, {
-      "id" : 1961070,
+      "id" : 1966123,
       "type" : "pattern",
       "rule" : [ "четырехзв*" ],
       "value" : "4"
     } ]
   }, {
     "entity" : {
-      "id" : 29357,
+      "id" : 29499,
       "name" : "HotelStars2",
       "enabled" : true,
       "shared" : false,
@@ -928,144 +928,144 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961071,
+      "id" : 1966124,
       "type" : "pattern",
       "rule" : [ "(1|одн*) (зв*)" ],
       "value" : "1"
     }, {
-      "id" : 1961072,
+      "id" : 1966125,
       "type" : "pattern",
       "rule" : [ "(1|одн*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "1"
     }, {
-      "id" : 1961073,
+      "id" : 1966126,
       "type" : "pattern",
       "rule" : [ "(2|дв*) (зв*)" ],
       "value" : "2"
     }, {
-      "id" : 1961074,
+      "id" : 1966127,
       "type" : "pattern",
       "rule" : [ "(2|дв*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "2"
     }, {
-      "id" : 1961075,
+      "id" : 1966128,
       "type" : "pattern",
       "rule" : [ "(3|тр*) (зв*)" ],
       "value" : "3"
     }, {
-      "id" : 1961076,
+      "id" : 1966129,
       "type" : "pattern",
       "rule" : [ "(3|тр*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "3"
     }, {
-      "id" : 1961077,
+      "id" : 1966130,
       "type" : "pattern",
       "rule" : [ "(4|четыр*) (зв*)" ],
       "value" : "4"
     }, {
-      "id" : 1961078,
+      "id" : 1966131,
       "type" : "pattern",
       "rule" : [ "(4|четыр*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "4"
     }, {
-      "id" : 1961079,
+      "id" : 1966132,
       "type" : "pattern",
       "rule" : [ "(5|пят*) (зв*)" ],
       "value" : "5"
     }, {
-      "id" : 1961080,
+      "id" : 1966133,
       "type" : "pattern",
       "rule" : [ "(5|пят*) [зв*] (гостин*|отел*|мотел*)" ],
       "value" : "5"
     }, {
-      "id" : 1961081,
+      "id" : 1966134,
       "type" : "pattern",
       "rule" : [ "без (зв*)" ],
       "value" : "-"
     }, {
-      "id" : 1961082,
+      "id" : 1966135,
       "type" : "pattern",
       "rule" : [ "двухзв*" ],
       "value" : "2"
     }, {
-      "id" : 1961083,
+      "id" : 1966136,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (1|одн*) [зв*]" ],
       "value" : "меньше 1"
     }, {
-      "id" : 1961084,
+      "id" : 1966137,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (2|дв*) [зв*]" ],
       "value" : "меньше 2"
     }, {
-      "id" : 1961085,
+      "id" : 1966138,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (3|тр*) [зв*]" ],
       "value" : "меньше 3"
     }, {
-      "id" : 1961086,
+      "id" : 1966139,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (4|четыр*) [зв*]" ],
       "value" : "меньше 4"
     }, {
-      "id" : 1961087,
+      "id" : 1966140,
       "type" : "pattern",
       "rule" : [ "(до|мен*|не бол*) (5|пят*) [зв*]" ],
       "value" : "меньше 5"
     }, {
-      "id" : 1961088,
+      "id" : 1966141,
       "type" : "pattern",
       "rule" : [ "люб*" ],
       "value" : "любой"
     }, {
-      "id" : 1961089,
+      "id" : 1966142,
       "type" : "pattern",
       "rule" : [ "однозв*" ],
       "value" : "1"
     }, {
-      "id" : 1961090,
+      "id" : 1966143,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*)  (1|одн*) [зв*]" ],
       "value" : "больше 1"
     }, {
-      "id" : 1961091,
+      "id" : 1966144,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*) (2|дв*) [зв*]" ],
       "value" : "больше 2"
     }, {
-      "id" : 1961092,
+      "id" : 1966145,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*) (3|тр*) [зв*]" ],
       "value" : "больше 3"
     }, {
-      "id" : 1961093,
+      "id" : 1966146,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*) (4|четыр*) [зв*]" ],
       "value" : "больше 4"
     }, {
-      "id" : 1961094,
+      "id" : 1966147,
       "type" : "pattern",
       "rule" : [ "(от|бол*|не мен*) (5|пят*) [зв*]" ],
       "value" : "больше 5"
     }, {
-      "id" : 1961095,
+      "id" : 1966148,
       "type" : "pattern",
       "rule" : [ "пятизв*" ],
       "value" : "5"
     }, {
-      "id" : 1961096,
+      "id" : 1966149,
       "type" : "pattern",
       "rule" : [ "трехзв*" ],
       "value" : "3"
     }, {
-      "id" : 1961097,
+      "id" : 1966150,
       "type" : "synonyms",
       "rule" : [ "четырехзв*" ],
       "value" : "4"
     } ]
   }, {
     "entity" : {
-      "id" : 29358,
+      "id" : 29500,
       "name" : "Money",
       "enabled" : true,
       "shared" : false,
@@ -1078,34 +1078,34 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961098,
+      "id" : 1966151,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961099,
+      "id" : 1966152,
       "type" : "pattern",
       "rule" : [ "@duckling.amount-of-money" ],
       "value" : ""
     }, {
-      "id" : 1961100,
+      "id" : 1966153,
       "type" : "pattern",
       "rule" : [ "@duckling.number" ],
       "value" : ""
     }, {
-      "id" : 1961101,
+      "id" : 1966154,
       "type" : "pattern",
       "rule" : [ "$regexp<\\d*р>" ],
       "value" : ""
     }, {
-      "id" : 1961102,
+      "id" : 1966155,
       "type" : "pattern",
       "rule" : [ "(эконом*|стандарт*|комфорт*|минимальн*|бюджедн*|любо*|без ограничен*)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29359,
+      "id" : 29501,
       "name" : "Money_intent",
       "enabled" : true,
       "shared" : false,
@@ -1118,24 +1118,24 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961103,
+      "id" : 1966156,
       "type" : "pattern",
       "rule" : [ "@duckling.amount-of-money" ],
       "value" : ""
     }, {
-      "id" : 1961104,
+      "id" : 1966157,
       "type" : "pattern",
       "rule" : [ "$regexp<\\d*р>" ],
       "value" : ""
     }, {
-      "id" : 1961105,
+      "id" : 1966158,
       "type" : "pattern",
       "rule" : [ "(эконом*|стандарт*|комфорт*|минимальн*|бюджедн*|любо*|без ограничен*)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29360,
+      "id" : 29502,
       "name" : "NewTour",
       "enabled" : true,
       "shared" : false,
@@ -1148,14 +1148,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961106,
+      "id" : 1966159,
       "type" : "pattern",
       "rule" : [ "({нов* тур*}|нов*)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29361,
+      "id" : 29503,
       "name" : "NewTourFirst",
       "enabled" : true,
       "shared" : false,
@@ -1168,24 +1168,24 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961107,
+      "id" : 1966160,
       "type" : "pattern",
       "rule" : [ "{@City в (тур*|поезд*|путешеств*|пакет*)}" ],
       "value" : ""
     }, {
-      "id" : 1961108,
+      "id" : 1966161,
       "type" : "pattern",
       "rule" : [ "{@City в (тур*|поезд*|путешеств*|пакет*) @Startdate}" ],
       "value" : ""
     }, {
-      "id" : 1961109,
+      "id" : 1966162,
       "type" : "pattern",
       "rule" : [ "(тур*|поезд*|путешеств*|пакет*)" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29362,
+      "id" : 29504,
       "name" : "No",
       "enabled" : true,
       "shared" : false,
@@ -1198,14 +1198,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961110,
+      "id" : 1966163,
       "type" : "pattern",
       "rule" : [ "(нет|неат|ниат|неа|ноуп|ноу|найн) [нет] [спасибо]" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29363,
+      "id" : 29505,
       "name" : "NoChildren",
       "enabled" : true,
       "shared" : false,
@@ -1218,19 +1218,19 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961111,
+      "id" : 1966164,
       "type" : "pattern",
       "rule" : [ "без (дет*|дит*|реб*|них|него|неё|нее)" ],
       "value" : "0"
     }, {
-      "id" : 1961112,
+      "id" : 1966165,
       "type" : "pattern",
       "rule" : [ "(ни одного|ноль|0)" ],
       "value" : "0"
     } ]
   }, {
     "entity" : {
-      "id" : 29364,
+      "id" : 29506,
       "name" : "NumChildren",
       "enabled" : false,
       "shared" : false,
@@ -1243,29 +1243,29 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961113,
+      "id" : 1966166,
       "type" : "pattern",
       "rule" : [ "@Disagree" ],
       "value" : "0"
     }, {
-      "id" : 1961114,
+      "id" : 1966167,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961115,
+      "id" : 1966168,
       "type" : "pattern",
       "rule" : [ "@duckling.number (дет*|реб*)" ],
       "value" : ""
     }, {
-      "id" : 1961116,
+      "id" : 1966169,
       "type" : "pattern",
       "rule" : [ "(дет*|реб*) @duckling.number" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29365,
+      "id" : 29507,
       "name" : "NumChildren_int",
       "enabled" : true,
       "shared" : false,
@@ -1278,29 +1278,29 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961117,
+      "id" : 1966170,
       "type" : "pattern",
       "rule" : [ "@Disagree" ],
       "value" : "0"
     }, {
-      "id" : 1961118,
+      "id" : 1966171,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961119,
+      "id" : 1966172,
       "type" : "pattern",
       "rule" : [ "@duckling.number" ],
       "value" : ""
     }, {
-      "id" : 1961120,
+      "id" : 1966173,
       "type" : "pattern",
       "rule" : [ "@NoChildren" ],
       "value" : "0"
     } ]
   }, {
     "entity" : {
-      "id" : 29366,
+      "id" : 29508,
       "name" : "NumPeople",
       "enabled" : true,
       "shared" : false,
@@ -1313,29 +1313,29 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961121,
+      "id" : 1966174,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961122,
+      "id" : 1966175,
       "type" : "pattern",
       "rule" : [ "{@duckling.number (челов*)}" ],
       "value" : ""
     }, {
-      "id" : 1961123,
+      "id" : 1966176,
       "type" : "pattern",
       "rule" : [ "(челов*) @duckling.number " ],
       "value" : ""
     }, {
-      "id" : 1961124,
+      "id" : 1966177,
       "type" : "pattern",
       "rule" : [ "(я|сам*|один|одна)" ],
       "value" : "1"
     } ]
   }, {
     "entity" : {
-      "id" : 29367,
+      "id" : 29509,
       "name" : "NumPeopleDef",
       "enabled" : true,
       "shared" : false,
@@ -1348,24 +1348,24 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961125,
+      "id" : 1966178,
       "type" : "pattern",
       "rule" : [ "{@duckling.number челов*}" ],
       "value" : ""
     }, {
-      "id" : 1961126,
+      "id" : 1966179,
       "type" : "pattern",
       "rule" : [ "(челов*) @duckling.number " ],
       "value" : ""
     }, {
-      "id" : 1961127,
+      "id" : 1966180,
       "type" : "pattern",
       "rule" : [ "(я|сам*|один|одна)" ],
       "value" : "1"
     } ]
   }, {
     "entity" : {
-      "id" : 29368,
+      "id" : 29510,
       "name" : "NumPeople_int",
       "enabled" : true,
       "shared" : false,
@@ -1378,19 +1378,19 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961128,
+      "id" : 1966181,
       "type" : "pattern",
       "rule" : [ "@duckling.number" ],
       "value" : ""
     }, {
-      "id" : 1961129,
+      "id" : 1966182,
       "type" : "pattern",
       "rule" : [ "@NumPeople" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29369,
+      "id" : 29511,
       "name" : "PreviousTour",
       "enabled" : true,
       "shared" : false,
@@ -1403,19 +1403,19 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961130,
+      "id" : 1966183,
       "type" : "pattern",
       "rule" : [ "(продолж*|вернуть*|стар*|прошлы*|предыдущ*|прежн*)" ],
       "value" : ""
     }, {
-      "id" : 1961131,
+      "id" : 1966184,
       "type" : "pattern",
       "rule" : [ "{(стар*|прошлы*|предыдущ*) тур*}" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29370,
+      "id" : 29512,
       "name" : "Seasons",
       "enabled" : true,
       "shared" : false,
@@ -1428,29 +1428,29 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961132,
+      "id" : 1966185,
       "type" : "pattern",
       "rule" : [ "весн*" ],
       "value" : "Весна"
     }, {
-      "id" : 1961133,
+      "id" : 1966186,
       "type" : "pattern",
       "rule" : [ "зим*" ],
       "value" : "Зима"
     }, {
-      "id" : 1961134,
+      "id" : 1966187,
       "type" : "pattern",
       "rule" : [ "лето*" ],
       "value" : "Лето"
     }, {
-      "id" : 1961135,
+      "id" : 1966188,
       "type" : "synonyms",
       "rule" : [ "осень*" ],
       "value" : "Осень"
     } ]
   }, {
     "entity" : {
-      "id" : 29371,
+      "id" : 29513,
       "name" : "Startdate",
       "enabled" : true,
       "shared" : false,
@@ -1463,19 +1463,19 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961136,
+      "id" : 1966189,
       "type" : "pattern",
       "rule" : [ "@Dont_know" ],
       "value" : "-"
     }, {
-      "id" : 1961137,
+      "id" : 1966190,
       "type" : "pattern",
       "rule" : [ "@duckling.time" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 29372,
+      "id" : 29514,
       "name" : "Yes",
       "enabled" : true,
       "shared" : false,
@@ -1488,7 +1488,7 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1961138,
+      "id" : 1966191,
       "type" : "pattern",
       "rule" : [ "[ну] [конечно|всё|все|вроде|пожалуй|возможно] (да|даа|lf|ага|агась|точно|угу|верно|ок|ok|окей|окай|okay|оке|именно|подтвержд*|йес) [да|конечно|конешно|канешна|всё|все|вроде|пожалуй|возможно]" ],
       "value" : ""
