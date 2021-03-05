@@ -9,7 +9,7 @@ theme: /
     
     state:
         q!: asd
-        a: asd ok Test
+        a: asd ok
         script:
             ('injector = ' + log(toPrettyString($injector)));
         
@@ -24,6 +24,7 @@ theme: /
     state: Block2
         q!: $cat
         a: котик Block2!
+        a: котик текст
         
     state: Block3
         intent!: /dogs
