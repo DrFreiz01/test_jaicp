@@ -26,6 +26,7 @@ theme: /
         a: котик Block2!
         a: котик текст
         a: More test
+        a: More test more
         
     state: Block3
         intent!: /dogs
