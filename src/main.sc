@@ -25,6 +25,7 @@ theme: /
         q!: $cat
         a: котик Block2!
         a: котик текст
+        a: More test
         
     state: Block3
         intent!: /dogs
