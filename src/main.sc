@@ -9,7 +9,7 @@ theme: /
     
     state:
         q!: asd
-        a: asd ok
+        a: asd ok test commit!
         script:
             ('injector = ' + log(toPrettyString($injector)));
         
