@@ -1,20 +1,35 @@
-require: slotfilling/slotFilling.sc
-  module = sys.zb-common
+patterns:
+    $cat = (кот/котик/котя)
+
 theme: /
 
-    state: Start
-        q!: $regex</start>
-        a: Начнём.
-
-    state: Hello
-        intent!: /привет
-        a: Привет привет
-
-    state: Bye
-        intent!: /пока
-        a: Пока пока
-
-    state: NoMatch
-        event!: noMatch
-        a: Я не понял. Вы сказали: {{$request.query}}
+    state: start
+        q!: * *start
+        a: Go!
+    
+    state:
+        q!: asd
+        a: asd ok Test Test Test
+        script:
+            ('injector = ' + log(toPrettyString($injector)));
+        
+        state: Block1
+            q: кот
+            a: котик block1!
+            
+        state:
+            intent: /dogs
+            a: собака block1
+        
+    state: Block2
+        q!: $cat
+        a: котик Block2!
+        
+    state: Block3
+        intent!: /dogs
+        a: собака block3
+        
+    state: CatchAll
+        event: noMatch
+        a: Вы сказали: {{ $request.query }}
 
