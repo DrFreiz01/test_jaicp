@@ -2,7 +2,12 @@ name: zb-cailapub
 
 entryPoint:
   - main.sc
-  
-nlp:
-  lengthLimit:
-    symbols: 1200
+
+botEngine: v2
+language: ru
+
+sts:
+    noMatchThreshold: 0.2
+
+caila:
+    noMatchThreshold: 0.2

@@ -1,235 +1,90 @@
 {
-  "project" : {
-    "id" : "test_git-248776874-Nhk",
-    "name" : "test_git-248776874-Nhk",
-    "folder" : "/jaicp"
-  },
-  "settings" : {
-    "language" : "ru",
-    "spellingCorrection" : true,
-    "classificationAlgorithm" : "deeplearning",
-    "timezone" : "UTC",
-    "shared" : false
-  },
-  "intents" : [ {
-    "id" : 60783,
-    "path" : "/dogs",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "собака"
-    }, {
-      "text" : "собаки"
-    } ],
-    "patterns" : [ ]
-  } ],
-  "entities" : [ {
-    "entity" : {
-      "id" : 29515,
-      "name" : "asd",
-      "enabled" : true,
-      "shared" : false,
-      "type" : "annotation",
-      "priority" : 1,
-      "noSpelling" : true,
-      "noMorph" : false,
-      "phoneticSearch" : false,
-      "fuzzySearch" : false,
-      "client" : false
+    "project": {
+        "id": "zb-cailapub",
+        "name": "zb-cailapub",
+        "folder": "/"
     },
-    "records" : [ {
-      "id" : 1966192,
-      "type" : "pattern",
-      "rule" : [ "asd" ],
-      "value" : ""
-    } ]
-  }, {
-    "entity" : {
-      "id" : 29516,
-      "name" : "contact",
-      "enabled" : true,
-      "shared" : false,
-      "type" : "annotation",
-      "priority" : 1,
-      "noSpelling" : true,
-      "noMorph" : false,
-      "phoneticSearch" : false,
-      "fuzzySearch" : false,
-      "client" : true
+    "settings": {
+        "language": "ru",
+        "spellingCorrection": false,
+        "classificationAlgorithm": "sts",
+        "timezone": "Europe/Moscow",
+        "extendedSettings": {
+      "tokenizerEngine": "mystem",
+            "useShared": false
+        }
     },
-    "records" : [ {
-      "id" : 1966193,
-      "type" : "pattern",
-      "rule" : [ ],
-      "value" : ""
-    } ]
-  }, {
-    "entity" : {
-      "id" : 29517,
-      "name" : "no",
-      "enabled" : true,
-      "shared" : false,
-      "type" : "annotation",
-      "priority" : 1,
-      "noSpelling" : true,
-      "noMorph" : false,
-      "phoneticSearch" : false,
-      "fuzzySearch" : false,
-      "client" : false
-    },
-    "records" : [ {
-      "id" : 1966194,
-      "type" : "pattern",
-      "rule" : [ "no" ],
-      "value" : ""
-    } ]
-  }, {
-    "entity" : {
-      "id" : 29518,
-      "name" : "test",
-      "enabled" : true,
-      "shared" : false,
-      "type" : "annotation",
-      "priority" : 1,
-      "noSpelling" : true,
-      "noMorph" : false,
-      "phoneticSearch" : false,
-      "fuzzySearch" : false,
-      "client" : false
-    },
-    "records" : [ {
-      "id" : 1966195,
-      "type" : "pattern",
-      "rule" : [ "test" ],
-      "value" : ""
-    } ]
-  }, {
-    "entity" : {
-      "id" : 29519,
-      "name" : "yes",
-      "enabled" : true,
-      "shared" : false,
-      "type" : "annotation",
-      "priority" : 1,
-      "noSpelling" : true,
-      "noMorph" : false,
-      "phoneticSearch" : false,
-      "fuzzySearch" : false,
-      "client" : false
-    },
-    "records" : [ {
-      "id" : 1966196,
-      "type" : "pattern",
-      "rule" : [ "yes" ],
-      "value" : ""
-    } ]
-  } ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time" ],
-  "spellerDictionary" : [ {
-    "word" : "ндфл",
-    "frequency" : -1
-  } ],
-  "systemEntities" : [ {
-    "name" : "mystem.geo",
-    "enabled" : false
-  }, {
-    "name" : "mystem.persn",
-    "enabled" : false
-  }, {
-    "name" : "mystem.obsc",
-    "enabled" : false
-  }, {
-    "name" : "mystem.patrn",
-    "enabled" : false
-  }, {
-    "name" : "mystem.famn",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.romn",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.latn",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.numb",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.intg",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.abbr",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.name",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.surn",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.patr",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.geox",
-    "enabled" : false
-  }, {
-    "name" : "pymorphy.orgn",
-    "enabled" : false
-  }, {
-    "name" : "duckling.number",
-    "version" : "v1",
-    "enabled" : true
-  }, {
-    "name" : "duckling.ordinal",
-    "version" : "v2",
-    "enabled" : false
-  }, {
-    "name" : "duckling.amount-of-money",
-    "version" : "v2",
-    "enabled" : false
-  }, {
-    "name" : "duckling.distance",
-    "version" : "v2",
-    "enabled" : false
-  }, {
-    "name" : "duckling.time",
-    "version" : "v1",
-    "enabled" : true
-  }, {
-    "name" : "duckling.date",
-    "version" : "v2",
-    "enabled" : false
-  }, {
-    "name" : "duckling.time-of-day",
-    "version" : "v2",
-    "enabled" : false
-  }, {
-    "name" : "duckling.duration",
-    "version" : "v1",
-    "enabled" : false
-  }, {
-    "name" : "duckling.phone-number",
-    "version" : "v1",
-    "enabled" : false
-  }, {
-    "name" : "duckling.email",
-    "version" : "v1",
-    "enabled" : false
-  }, {
-    "name" : "duckling.url",
-    "version" : "v1",
-    "enabled" : false
-  }, {
-    "name" : "duckling.interval",
-    "version" : "v2",
-    "enabled" : false
-  }, {
-    "name" : "mlps-obscene.obscene",
-    "enabled" : false
-  }, {
-    "name" : "zb.datetime",
-    "enabled" : false
-  }, {
-    "name" : "zb.number",
-    "enabled" : false
-  } ]
+    "intents": [
+        {
+            "path": "/пока",
+            "description": null,
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "пока",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        },
+        {
+            "path": "/привет",
+            "description": null,
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "привет",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        }
+    ],
+    "entities": [],
+    "enabledSystemEntities": [
+        "duckling.number",
+        "duckling.time",
+        "duckling.duration",
+        "duckling.phone-number",
+        "duckling.email",
+        "duckling.url"
+    ],
+    "systemEntities": [
+        {
+            "name": "duckling.number",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.time",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.duration",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.phone-number",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.email",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.url",
+            "version": "v2",
+            "enabled": true
+        }
+    ]
 }
