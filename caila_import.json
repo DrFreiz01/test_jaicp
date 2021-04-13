@@ -1,8 +1,8 @@
 {
   "project" : {
-    "id" : "test_mini-248776874-nOa",
-    "name" : "test_mini-248776874-nOa",
-    "folder" : "/"
+    "id" : "test_git-248776874-Nhk",
+    "name" : "test_git-248776874-Nhk",
+    "folder" : "/jaicp"
   },
   "settings" : {
     "language" : "ru",
@@ -12,7 +12,18 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 60168,
+    "id" : 72449,
+    "path" : "/cats",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "cats"
+    }, {
+      "text" : "cat"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 72448,
     "path" : "/dogs",
     "enabled" : true,
     "shared" : false,
@@ -25,7 +36,7 @@
   } ],
   "entities" : [ {
     "entity" : {
-      "id" : 25099,
+      "id" : 35536,
       "name" : "asd",
       "enabled" : true,
       "shared" : false,
@@ -38,14 +49,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1453771,
+      "id" : 2800802,
       "type" : "pattern",
       "rule" : [ "asd" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 25691,
+      "id" : 35537,
       "name" : "contact",
       "enabled" : true,
       "shared" : false,
@@ -58,14 +69,14 @@
       "client" : true
     },
     "records" : [ {
-      "id" : 1552033,
+      "id" : 2800803,
       "type" : "pattern",
       "rule" : [ ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 25101,
+      "id" : 35538,
       "name" : "no",
       "enabled" : true,
       "shared" : false,
@@ -78,14 +89,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1453773,
+      "id" : 2800804,
       "type" : "pattern",
       "rule" : [ "no" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 25102,
+      "id" : 35539,
       "name" : "test",
       "enabled" : true,
       "shared" : false,
@@ -98,14 +109,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1453774,
+      "id" : 2800805,
       "type" : "pattern",
       "rule" : [ "test" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 25100,
+      "id" : 35540,
       "name" : "yes",
       "enabled" : true,
       "shared" : false,
@@ -118,7 +129,7 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 1453772,
+      "id" : 2800806,
       "type" : "pattern",
       "rule" : [ "yes" ],
       "value" : ""
@@ -130,13 +141,78 @@
     "frequency" : -1
   } ],
   "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
     "name" : "duckling.number",
     "version" : "v1",
     "enabled" : true
   }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
     "name" : "duckling.time",
     "version" : "v1",
     "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
   }, {
     "name" : "duckling.duration",
     "version" : "v1",
@@ -154,18 +230,17 @@
     "version" : "v1",
     "enabled" : false
   }, {
-    "name" : "pymorphy.name",
-    "enabled" : false
-  }, {
     "name" : "duckling.interval",
     "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
     "enabled" : false
   }, {
     "name" : "zb.datetime",
     "enabled" : false
   }, {
-    "name" : "duckling.date",
-    "version" : "v2",
+    "name" : "zb.number",
     "enabled" : false
   } ]
 }
