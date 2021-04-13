@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "test_git_master-248776874-AYi",
-    "name" : "test_git_master-248776874-AYi",
+    "id" : "test_git-248776874-Nhk",
+    "name" : "test_git-248776874-Nhk",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -12,7 +12,7 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 72452,
+    "id" : 72449,
     "path" : "/cats",
     "enabled" : true,
     "shared" : false,
@@ -23,7 +23,7 @@
     } ],
     "patterns" : [ ]
   }, {
-    "id" : 72453,
+    "id" : 72448,
     "path" : "/dogs",
     "enabled" : true,
     "shared" : false,
@@ -33,10 +33,21 @@
       "text" : "собаки"
     } ],
     "patterns" : [ ]
+  }, {
+    "id" : 72458,
+    "path" : "/ducks",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ducks"
+    }, {
+      "text" : "duck"
+    } ],
+    "patterns" : [ ]
   } ],
   "entities" : [ {
     "entity" : {
-      "id" : 35541,
+      "id" : 35536,
       "name" : "asd",
       "enabled" : true,
       "shared" : false,
@@ -49,14 +60,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800807,
+      "id" : 2800802,
       "type" : "pattern",
       "rule" : [ "asd" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35542,
+      "id" : 35537,
       "name" : "contact",
       "enabled" : true,
       "shared" : false,
@@ -69,14 +80,14 @@
       "client" : true
     },
     "records" : [ {
-      "id" : 2800808,
+      "id" : 2800803,
       "type" : "pattern",
       "rule" : [ ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35543,
+      "id" : 35538,
       "name" : "no",
       "enabled" : true,
       "shared" : false,
@@ -89,14 +100,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800809,
+      "id" : 2800804,
       "type" : "pattern",
       "rule" : [ "no" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35544,
+      "id" : 35539,
       "name" : "test",
       "enabled" : true,
       "shared" : false,
@@ -109,14 +120,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800810,
+      "id" : 2800805,
       "type" : "pattern",
       "rule" : [ "test" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35545,
+      "id" : 35540,
       "name" : "yes",
       "enabled" : true,
       "shared" : false,
@@ -129,7 +140,7 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800811,
+      "id" : 2800806,
       "type" : "pattern",
       "rule" : [ "yes" ],
       "value" : ""
