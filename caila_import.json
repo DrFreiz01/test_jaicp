@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "test_git_master-248776874-AYi",
-    "name" : "test_git_master-248776874-AYi",
+    "id" : "test_git-248776874-Nhk",
+    "name" : "test_git-248776874-Nhk",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -15,10 +15,146 @@
     },
     "shared" : false
   },
-  "intents" : [ ],
-  "entities" : [ ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
-  "spellerDictionary" : [ ],
+  "intents" : [ {
+    "id" : 72449,
+    "path" : "/cats",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "cats"
+    }, {
+      "text" : "cat"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 72448,
+    "path" : "/dogs",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "собака"
+    }, {
+      "text" : "собаки"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 72458,
+    "path" : "/ducks",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ducks"
+    }, {
+      "text" : "duck"
+    } ],
+    "patterns" : [ ]
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "id" : 35536,
+      "name" : "asd",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 2800802,
+      "type" : "pattern",
+      "rule" : [ "asd" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 35537,
+      "name" : "contact",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : true
+    },
+    "records" : [ {
+      "id" : 2800803,
+      "type" : "pattern",
+      "rule" : [ ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 35538,
+      "name" : "no",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 2800804,
+      "type" : "pattern",
+      "rule" : [ "no" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 35539,
+      "name" : "test",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 2800805,
+      "type" : "pattern",
+      "rule" : [ "test" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "id" : 35540,
+      "name" : "yes",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false
+    },
+    "records" : [ {
+      "id" : 2800806,
+      "type" : "pattern",
+      "rule" : [ "yes" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time" ],
+  "spellerDictionary" : [ {
+    "word" : "ндфл",
+    "frequency" : -1
+  } ],
   "systemEntities" : [ {
     "name" : "mystem.geo",
     "enabled" : false
@@ -94,6 +230,14 @@
     "enabled" : false
   }, {
     "name" : "duckling.duration",
+    "version" : "v1",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
     "version" : "v2",
     "enabled" : true
   }, {
@@ -106,8 +250,8 @@
     "enabled" : true
   }, {
     "name" : "duckling.url",
-    "version" : "v2",
-    "enabled" : true
+    "version" : "v1",
+    "enabled" : false
   }, {
     "name" : "duckling.interval",
     "version" : "v2",
