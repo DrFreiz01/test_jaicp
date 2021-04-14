@@ -1,18 +1,22 @@
 {
   "project" : {
-    "id" : "test_git-248776874-Nhk",
-    "name" : "test_git-248776874-Nhk",
+    "id" : "test_git_master-248776874-AYi",
+    "name" : "test_git_master-248776874-AYi",
     "folder" : "/jaicp"
   },
   "settings" : {
     "language" : "ru",
-    "spellingCorrection" : true,
-    "classificationAlgorithm" : "deeplearning",
-    "timezone" : "UTC",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
+    },
     "shared" : false
   },
   "intents" : [ {
-    "id" : 72449,
+    "id" : 72474,
     "path" : "/cats",
     "enabled" : true,
     "shared" : false,
@@ -23,7 +27,7 @@
     } ],
     "patterns" : [ ]
   }, {
-    "id" : 72448,
+    "id" : 72475,
     "path" : "/dogs",
     "enabled" : true,
     "shared" : false,
@@ -34,7 +38,7 @@
     } ],
     "patterns" : [ ]
   }, {
-    "id" : 72458,
+    "id" : 72476,
     "path" : "/ducks",
     "enabled" : true,
     "shared" : false,
@@ -44,21 +48,10 @@
       "text" : "duck"
     } ],
     "patterns" : [ ]
-  }, {
-    "id" : 72477,
-    "path" : "/main_test",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "test"
-    }, {
-      "text" : "testing"
-    } ],
-    "patterns" : [ ]
   } ],
   "entities" : [ {
     "entity" : {
-      "id" : 35536,
+      "id" : 35551,
       "name" : "asd",
       "enabled" : true,
       "shared" : false,
@@ -71,14 +64,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800802,
+      "id" : 2800826,
       "type" : "pattern",
       "rule" : [ "asd" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35537,
+      "id" : 35552,
       "name" : "contact",
       "enabled" : true,
       "shared" : false,
@@ -91,14 +84,14 @@
       "client" : true
     },
     "records" : [ {
-      "id" : 2800803,
+      "id" : 2800827,
       "type" : "pattern",
       "rule" : [ ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35538,
+      "id" : 35553,
       "name" : "no",
       "enabled" : true,
       "shared" : false,
@@ -111,14 +104,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800804,
+      "id" : 2800828,
       "type" : "pattern",
       "rule" : [ "no" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35539,
+      "id" : 35554,
       "name" : "test",
       "enabled" : true,
       "shared" : false,
@@ -131,14 +124,14 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800805,
+      "id" : 2800829,
       "type" : "pattern",
       "rule" : [ "test" ],
       "value" : ""
     } ]
   }, {
     "entity" : {
-      "id" : 35540,
+      "id" : 35555,
       "name" : "yes",
       "enabled" : true,
       "shared" : false,
@@ -151,13 +144,13 @@
       "client" : false
     },
     "records" : [ {
-      "id" : 2800806,
+      "id" : 2800830,
       "type" : "pattern",
       "rule" : [ "yes" ],
       "value" : ""
     } ]
   } ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time" ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email" ],
   "spellerDictionary" : [ {
     "word" : "ндфл",
     "frequency" : -1
@@ -209,7 +202,7 @@
     "enabled" : false
   }, {
     "name" : "duckling.number",
-    "version" : "v1",
+    "version" : "v2",
     "enabled" : true
   }, {
     "name" : "duckling.ordinal",
@@ -225,7 +218,7 @@
     "enabled" : false
   }, {
     "name" : "duckling.time",
-    "version" : "v1",
+    "version" : "v2",
     "enabled" : true
   }, {
     "name" : "duckling.date",
@@ -237,16 +230,16 @@
     "enabled" : false
   }, {
     "name" : "duckling.duration",
-    "version" : "v1",
-    "enabled" : false
+    "version" : "v2",
+    "enabled" : true
   }, {
     "name" : "duckling.phone-number",
-    "version" : "v1",
-    "enabled" : false
+    "version" : "v2",
+    "enabled" : true
   }, {
     "name" : "duckling.email",
-    "version" : "v1",
-    "enabled" : false
+    "version" : "v2",
+    "enabled" : true
   }, {
     "name" : "duckling.url",
     "version" : "v1",
