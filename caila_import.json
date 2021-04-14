@@ -6,9 +6,13 @@
   },
   "settings" : {
     "language" : "ru",
-    "spellingCorrection" : true,
-    "classificationAlgorithm" : "deeplearning",
-    "timezone" : "UTC",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
+    },
     "shared" : false
   },
   "intents" : [ {
@@ -198,7 +202,7 @@
     "enabled" : false
   }, {
     "name" : "duckling.number",
-    "version" : "v1",
+    "version" : "v2",
     "enabled" : true
   }, {
     "name" : "duckling.ordinal",
@@ -214,7 +218,7 @@
     "enabled" : false
   }, {
     "name" : "duckling.time",
-    "version" : "v1",
+    "version" : "v2",
     "enabled" : true
   }, {
     "name" : "duckling.date",
@@ -229,13 +233,21 @@
     "version" : "v1",
     "enabled" : false
   }, {
-    "name" : "duckling.phone-number",
-    "version" : "v1",
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
     "enabled" : false
   }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
     "name" : "duckling.email",
-    "version" : "v1",
-    "enabled" : false
+    "version" : "v2",
+    "enabled" : true
   }, {
     "name" : "duckling.url",
     "version" : "v1",

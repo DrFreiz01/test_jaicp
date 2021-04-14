@@ -32,4 +32,4 @@ theme: /
     state: CatchAll
         event: noMatch
         a: Вы сказали: {{ $request.query }}
-        
+
