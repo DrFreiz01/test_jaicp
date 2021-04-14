@@ -6,13 +6,9 @@
   },
   "settings" : {
     "language" : "ru",
-    "spellingCorrection" : false,
-    "classificationAlgorithm" : "sts",
-    "timezone" : "Europe/Moscow",
-    "extendedSettings" : {
-      "tokenizerEngine" : "mystem",
-      "useShared" : false
-    },
+    "spellingCorrection" : true,
+    "classificationAlgorithm" : "deeplearning",
+    "timezone" : "UTC",
     "shared" : false
   },
   "intents" : [ {
@@ -46,6 +42,17 @@
       "text" : "ducks"
     }, {
       "text" : "duck"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 72477,
+    "path" : "/main_test",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "test"
+    }, {
+      "text" : "testing"
     } ],
     "patterns" : [ ]
   } ],
@@ -202,7 +209,7 @@
     "enabled" : false
   }, {
     "name" : "duckling.number",
-    "version" : "v2",
+    "version" : "v1",
     "enabled" : true
   }, {
     "name" : "duckling.ordinal",
@@ -218,7 +225,7 @@
     "enabled" : false
   }, {
     "name" : "duckling.time",
-    "version" : "v2",
+    "version" : "v1",
     "enabled" : true
   }, {
     "name" : "duckling.date",
@@ -233,21 +240,13 @@
     "version" : "v1",
     "enabled" : false
   }, {
-    "name" : "duckling.time-of-day",
-    "version" : "v2",
+    "name" : "duckling.phone-number",
+    "version" : "v1",
     "enabled" : false
   }, {
-    "name" : "duckling.duration",
-    "version" : "v2",
-    "enabled" : true
-  }, {
-    "name" : "duckling.phone-number",
-    "version" : "v2",
-    "enabled" : true
-  }, {
     "name" : "duckling.email",
-    "version" : "v2",
-    "enabled" : true
+    "version" : "v1",
+    "enabled" : false
   }, {
     "name" : "duckling.url",
     "version" : "v1",
