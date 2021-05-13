@@ -1,8 +1,0 @@
-name: zb-cailapub
-
-entryPoint:
-  - main.sc
-  
-nlp:
-  lengthLimit:
-    symbols: 1200
