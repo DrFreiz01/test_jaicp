@@ -1,0 +1,19 @@
+<!--Here you can define tests for your chatbot.-->
+<!--Read more about testing: https://help.just-ai.com/#/docs/en/Content_testing/tests_xml/tests_xml-->
+
+<test>
+  <test-case>
+    <q>/start</q>
+    <a>Hello!</a>
+    <a>I can tell you about the weather anywhere in the world today or provide a weather forecast for any day up to two weeks ahead.</a>
+    <a>What city would you like to know the weather for?</a>
+    <q>London</q>
+    <a state="/Weather/GetWeather"/>
+    <q>And tomorrow?</q>
+    <a state="/Weather/GetWeather"/>  
+    <q>And in Delhi?</q>  
+    <a state="/Weather/GetWeather"/>
+    <q>And what about AaaTestCity?</q>
+    <a>Sorry, I could not find the weather forecast for this city.</a>
+  </test-case>
+</test>

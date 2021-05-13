@@ -1,0 +1,56 @@
+# Read more about chatbot.yaml at the Help Center: https://help.just-ai.com/#/docs/en/common/bot_structure/configuration_file
+
+# Minimum required settings for using CAILA
+
+# Project name
+name: weather_forecast
+
+# entryPoint defines the scenario entry point. This path is relative to 'src' folder.
+entryPoint: main.sc
+
+# botEngine determines whether the bot will use CAILA (v2) or just the legacy dialog engine (v1) for NLU purposes.
+# New bots should be created with botEngine: v2.
+# Read more about available NLU providers here: https://help.just-ai.com/#/docs/en/NLU_core/nlu_core
+botEngine: v2
+
+# Specifies the language for compatibility with the STS classifier. https://help.just-ai.com/#/docs/en/NLU_core/project_migration
+# CAILA supports more languages and should be used in new bots.
+language: en
+
+# noMatchThreshold specifies the minimum similarity score any input phrase should exceed in order to be matched by the classifier.
+# According to our experience, 0.2 is the optimal value for this parameter.
+
+# sts.noMatchThreshold sets threshold for the 'e:', 'eg:' activators.
+sts:
+  noMatchThreshold: 0.2
+# caila.noMatchThreshold sets threshold for the "intent:" activator.
+caila:
+  noMatchThreshold: 0.2
+
+# Additional settings
+
+# You can create functional tests for your chatbot.
+# Read more about testing: https://help.just-ai.com/#/docs/en/Content_testing/tests_xml/tests_xml
+
+# All tests located in the 'test' folder will be run with each deploy. To change this logic, use the 'exclude' parameter.
+tests:
+  exclude:
+    - test.xml
+
+# Connect your chatbot with other scenarios or pieces of code located in external git-sources   
+# Read more about require: https://help.just-ai.com/#/docs/en/JAICP_DSL/tags/declarative_tags/require
+# dependencies:
+# The name used in scenarios to reference the dependency.
+#   - name: common
+    # type: git
+    # address of the repository
+    # url: 
+    # apply to the master or other branch of the repository 
+    # version: heads/master
+    
+# Use the injector section to define configuration parameters of your chat bot. Parameters defined here will be available in chat bot scripts via the $injector variable.
+# Learn more about $injector https://help.just-ai.com/#/docs/en/JS_API/variables/injector
+injector:
+    # You can get the API key here: https://openweathermap.org/appid
+    weatherApiKey: 'fc636e422739d41e8af83cec5c3d4431'
+
