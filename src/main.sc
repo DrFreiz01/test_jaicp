@@ -5,7 +5,7 @@ theme: /
 
     state: start
         q!: * *start
-        a: Go!
+        a: Go! Go!
     
     state:
         q!: asd
